@@ -19,9 +19,12 @@ func gradientDescent(x0, alpha float64, maxIterations int) (float64, float64) {
 
 func main() {
 	// Entradas
-	x0 := 5.0
-	alpha := 0.1
-	maxIterations := 100
+	fmt.Print("Ingrese el punto inicial (x0): ")
+	fmt.Scan(&x0)
+	fmt.Print("Ingrese el tamaño de paso (alpha): ")
+	fmt.Scan(&alpha)
+	fmt.Print("Ingrese el número máximo de iteraciones: ")
+	fmt.Scan(&maxIter)
 
 	// Ejecuta el algoritmo de descenso de gradiente
 	xMin, fMin := gradientDescent(x0, alpha, maxIterations)
